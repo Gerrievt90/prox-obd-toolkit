@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#070b14" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>ProX OBD Toolkit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">PX</div>
+        <div class="brand-text">
+          <h1>ProX OBD</h1>
+          <p id="vehicleChip">2005–2025 multi-make</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button type="button" id="btnCarMode" class="icon-btn" title="Car stereo layout">CAR</button>
+        <button type="button" id="btnNight" class="icon-btn" title="Night mode">NIGHT</button>
+        <button type="button" id="connPill" class="conn-pill off" title="Connection">
+          <span class="dot"></span>
+          <span id="connLabel">Offline</span>
+        </button>
+      </div>
+    </header>
+    <main id="main" class="main"></main>
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-inner" id="nav"></div>
+    </nav>
+  </div>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
